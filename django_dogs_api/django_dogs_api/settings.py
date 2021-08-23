@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-j#yieiz9k_kopwc@_u9nn=m3#diwpsa1wuk@l!y+=&++9(oowi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'git.heroku.com/lit-headland-65632.git']
+ALLOWED_HOSTS = ['localhost', 'lit-headland-65632.herokuapp.com']
 
 
 # Application definition
