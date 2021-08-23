@@ -7,4 +7,4 @@ class DogSerializer(serializers.ModelSerializer):
         model = Dog
         
         #tell django which fields to include
-        fiels = ('name', 'breed', 'age', 'gender', 'color', 'image_url', 'weight')
+        fields = ('id', 'name', 'breed', 'age', 'gender', 'color', 'image_url', 'weight')
