@@ -1,8 +1,8 @@
-from django.shortcuts import render
+# from django.shortcuts import render
 
 # from django.db.models.query import QuerySet
 
-from django.shortcuts import render
+# from django.shortcuts import render
 
 # The views i created
 from rest_framework import generics
@@ -23,6 +23,6 @@ class DogList(generics.ListCreateAPIView):
 
 # will either update or delete a contact in the DB
 class DogDetail(generics.RetrieveUpdateDestroyAPIView):
-    querySet = Dog.objects.all().order_by('id')
+    queryset = Dog.objects.all().order_by('id')
     serializer_class = DogSerializer
 
