@@ -10,7 +10,7 @@ from .serializers import DogSerializer
 from .models import Dog
 
 
-# generics.ListCreateAPIView will be inherited by ContactList
+# generics.ListCreateAPIView will be inherited by DogList
 
 # will either display all Contacts in the DB or create a new one
 class DogList(generics.ListCreateAPIView):
@@ -25,3 +25,4 @@ class DogList(generics.ListCreateAPIView):
 class DogDetail(generics.RetrieveUpdateDestroyAPIView):
     querySet = Dog.objects.all().order_by('id')
     serializer_class = DogSerializer
+
