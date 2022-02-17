@@ -10,3 +10,4 @@ class Dog(models.Model):
     color = models.CharField(max_length=32)
     image = models.URLField()
     city = models.CharField(max_length=32)
+    country = models.CharField(max_length=32)
