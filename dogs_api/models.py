@@ -9,4 +9,4 @@ class Dog(models.Model):
     gender = models.CharField(max_length=32)
     color = models.CharField(max_length=32)
     image = models.URLField()
-    weight = models.IntegerField()
+    city = models.CharField(max_length=32)
